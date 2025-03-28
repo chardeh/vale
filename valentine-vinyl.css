@@ -64,3 +64,13 @@ body::before {
   text-align: center;
 }
 
+body::after {
+  content: "\2665 \2665 \2665 \2665 \2665 \2665 \2665 \2665 \2665 \2665";
+  display: block;
+  font-size: 10px;
+  color: #ff69b4;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+}
