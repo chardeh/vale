@@ -1,13 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #ffebf5; /* Light pink background */
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 h1 {
-  color: #ff6b6b;
+  color: #ff1493; /* Deep pink */
   margin-top: 20px;
 }
 
@@ -27,7 +28,7 @@ svg {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #d24a89;
+  background-color: #ff69b4; /* Hot pink */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -35,7 +36,7 @@ svg {
 }
 
 #play-button:hover {
-  background-color: #ff3b3b;
+  background-color: #ff1493; /* Deep pink */
 }
 
 @keyframes spin {
@@ -50,3 +51,16 @@ svg {
 .spin {
   animation: spin 4s linear infinite;
 }
+
+/* Adding lots of hearts */
+body::before {
+  content: "\2665 \2665 \2665 \2665 \2665 \2665 \2665 \2665 \2665 \2665"; /* Unicode hearts */
+  display: block;
+  font-size: 50px;
+  color: #ff1493;
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  text-align: center;
+}
+
